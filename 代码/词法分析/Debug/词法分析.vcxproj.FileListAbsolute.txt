@@ -1,0 +1,2 @@
+C:\Users\Administrator\作业\编译原理\代码\词法分析\Debug\词法分析.exe
+C:\Users\Administrator\作业\编译原理\代码\词法分析\Debug\词法分析.pdb
