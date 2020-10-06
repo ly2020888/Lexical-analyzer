@@ -2,9 +2,10 @@
 #pragma warning(disable:4996)
 
 char temp;
-char input[100];
-char token[100];
-int input_pointer = 0, token_pointer = 0,row = 0;
+char input[1000];
+char token[1000];
+int input_pointer = 0, token_pointer = 0,row = 0,point = 0;
+
 using namespace std;
 
 key keyword[]  {{"main",1},{"if",2},{"else",3},{"while",4},{"integer",5},
@@ -16,8 +17,21 @@ key keyword[]  {{"main",1},{"if",2},{"else",3},{"while",4},{"integer",5},
 specialChar sChar[]  { {',',200 },{';',201 },{':',202 },{'{',203 },{'}',204 },{'[',205 },
 									{']',206 },{'(',207 },{')',208 } };
 int main(){
-	while (scanf("%c", &input[input_pointer++]) != EOF);//读入全部的字符
-	getToken();
-	cout << token;
+	FILE* f = fopen("./testA.txt", "r");
+	//while (fscanf(f,"%c", &input[input_pointer++]) != EOF);//读入全部的字符
+	if (!f) {
+		cout << "file error";
+		return 0;
+	}
+
+	while (true) {
+		if (feof(f)) break;
+		fscanf(f, "%c", &input[input_pointer++]);
+	}
+	while (point < input_pointer) {
+		getToken();
+
+	}
+	fclose(f);
     return 0;
 }

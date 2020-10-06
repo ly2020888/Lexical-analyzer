@@ -1,5 +1,8 @@
 int main ()
 {
-    int a = 1;
+    int a = 1.111;
+    int b1 = 3;
+    int _love_you;
+/* love me, but you should love youself more*/
     return 0;
 }

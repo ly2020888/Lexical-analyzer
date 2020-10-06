@@ -1,0 +1,8 @@
+int main ()
+{
+    int a = 1.111;
+    int b1 = 3;
+    int _love_you;//1535
+/* asdasd*/asdasd
+    return 0;
+}

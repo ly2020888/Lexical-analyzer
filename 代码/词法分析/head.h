@@ -5,11 +5,13 @@
 #include <iostream>
 #include <cstdio>
 #include <cstring>
+#include <fstream>
+#include <iterator>
 extern char input[];
 extern char token[];
 extern int input_pointer, token_pointer;//Á½¸öÖ¸Õë
-extern int point;
 extern int row;
+extern int point;
 
 typedef struct {
 	char name[10];
